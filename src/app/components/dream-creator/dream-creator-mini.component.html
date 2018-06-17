@@ -1,0 +1,11 @@
+<div class="col">
+    <div id="new-goal" class="goal-overview">
+      <form id="newgoal">
+        <div class="goal">
+          I want to
+          <input type="text" class="txt" name="item" [(ngModel)]="goalText">
+        </div>
+        <input type="submit" class="btn" value="Add dream" align="right" (click)="addItem()">
+      </form>
+    </div>
+  </div>

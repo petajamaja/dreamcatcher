@@ -1,0 +1,26 @@
+<div class="bg">
+  <h1>MY LIFE GOALS AND DREAMS</h1>
+  <h3 >Current goal count: ({{ itemCount }})</h3>
+  <div class="delimiter"></div>
+  <div class="col">
+    <div id="new-goal" class="goal-overview">
+      <form id="newgoal">
+        <div class="goal">
+          I want to
+          <input type="text" class="txt" name="item" [(ngModel)]="goalText">
+        </div>
+        <div class="completion">
+          How close am I to it?
+          <select name="completion-select" form="" [(ngModel)]="goalStatus">
+              <option *ngFor="let s of status" [ngValue]="s">{{s.text}}</option>
+          </select>
+        </div>
+        <div class="description">
+          <input type="checkbox" name="desc" value="Description toggle" (click)="toggleDescription()"> Add description <br>
+          <textarea *ngIf="addDescription"></textarea>
+        </div>
+        <input type="submit" class="btn" value="Add dream" align="right" (click)="addItem()">
+      </form>
+    </div>
+  </div>
+</div>
