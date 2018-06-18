@@ -1,0 +1,40 @@
+.creator-widget {
+  height: 100px;
+  font-size: 30px;
+  padding: 20px 0 20px 10px;
+  width: 400px;
+}
+
+input, input:focus{
+  border:0;
+  border-bottom: 1px solid var(--dark-color);
+  outline: none;
+  height: 30px;
+  font-size: 30px;
+  width: 250px;
+}
+
+input.btn {
+  float: right;
+  display: block;
+  color: #003a61;
+  margin-bottom: 1em;
+  cursor: pointer;
+  line-height: 30px;
+  font-size: 20px;
+  height: 40px;
+  width: auto;
+  padding: 5px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+.add {
+  border: 0;
+  background: #a5f883;
+}
+
+.load {
+  background: white;
+  border: 2px solid #a5f883;
+}

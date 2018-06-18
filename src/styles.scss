@@ -19,6 +19,7 @@
 body {
   background: var(--body-color);
   padding: 3em;
+  padding-top: 1em;
   font-family: var(--font-main);
   color: var(--main-text-color);
 }
@@ -74,4 +75,14 @@ h3 {
   left: -50px;
   margin-bottom: 50px;
   margin-top: 25px;
+}
+
+.wrapper {
+  border: 1px #2885c46e solid;
+  box-shadow: 5px 5px 5px grey;
+  flex: 0 50%;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
 }

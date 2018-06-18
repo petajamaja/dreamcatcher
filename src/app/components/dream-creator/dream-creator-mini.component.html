@@ -1,11 +1,10 @@
-<div class="col">
-    <div id="new-goal" class="goal-overview">
-      <form id="newgoal">
-        <div class="goal">
-          I want to
-          <input type="text" class="txt" name="item" [(ngModel)]="goalText">
-        </div>
-        <input type="submit" class="btn" value="Add dream" align="right" (click)="addItem()">
-      </form>
+<div class="creator-widget wrapper">
+  <form id="newgoal" autocomplete="off">
+    <div class="goal">
+        I want to
+        <input type="text" class="txt" name="item" [(ngModel)]="goalText">
     </div>
-  </div>
+    <input type="submit" class="btn add" value="Add dream" align="right" (click)="addItem()">
+    <input type="submit" class="btn load" value="Load dreams from file" align="left" (click)="addItem()">
+  </form>
+</div>

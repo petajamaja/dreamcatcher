@@ -14,6 +14,10 @@ import { QuotesComponent } from './components/quotes/quotes.component';
 import { ChatbotComponent } from './components/chatbot/chatbot.component';
 import { RadarComponent } from './components/radar/radar.component';
 import { DreamCreatorComponent } from './components/dream-creator/dream-creator.component';
+import { DreamCreatorMiniComponent} from './components/dream-creator/dream-creator-mini.component'
+import { QuotesMiniComponent } from './components/quotes/quotes-mini.component';
+import { MyDreamsMiniComponent } from './components/my-dreams/my-dreams-mini.component';
+import { RadarMiniComponent } from './components/radar/radar-mini.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +25,14 @@ import { DreamCreatorComponent } from './components/dream-creator/dream-creator.
     HomeComponent,
     AboutComponent,
     MyDreamsComponent,
+    MyDreamsMiniComponent,
     QuotesComponent,
+    QuotesMiniComponent,
     ChatbotComponent,
     RadarComponent,
-    DreamCreatorComponent
+    RadarMiniComponent,
+    DreamCreatorComponent,
+    DreamCreatorMiniComponent,
   ],
   imports: [
     BrowserModule,

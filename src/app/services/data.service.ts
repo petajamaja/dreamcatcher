@@ -14,4 +14,7 @@ export class DataService {
     this.goals.next(goal)
   }
 
+  getGoalCount(){
+    return this.goal;
+  }
 }
