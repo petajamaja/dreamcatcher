@@ -1,0 +1,38 @@
+modal {
+    .modal {
+        .modal-body{
+            margin: 0 auto;
+            width: 800px;
+            height: 200px;
+            position: relative;
+            top: 50%;
+            transform: perspective(1px) translateY(-50%);
+
+            h1{
+                margin: auto;
+            }
+            input[type="file"] {
+                display: none;
+            }  
+            span {
+                color: var(--color-dark);
+                font-size: 20px;
+                margin-right: 20px;
+            } 
+            .custom-file-upload, button {
+                display: inline-block;
+                color: #003a61;
+                margin-bottom: 1em;
+                cursor: pointer;
+                line-height: 30px;
+                font-size: 20px;
+                width: auto;
+                padding: 5px;
+                margin-top: 20px;
+                margin-right: 25px;
+                border: 0;
+                background: #a5f883;
+            }
+        }
+    }
+}

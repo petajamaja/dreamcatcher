@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { DataService } from '../../services/data.service';
 import Goal from '../../api/goal.interface';
+import { ModalService } from '../../services/modal.service';
 
 @Component({
   selector: 'app-new-dream-mini',
@@ -15,7 +16,7 @@ export class DreamCreatorMiniComponent implements OnInit {
   goalText : String;
   defaultStatus = { text: "Haven't started yet", value: 0 };
 
-  constructor(private _data: DataService) { 
+  constructor(private _data: DataService, private _modal: ModalService) { 
   }
 
   ngOnInit() {
@@ -23,8 +24,12 @@ export class DreamCreatorMiniComponent implements OnInit {
     this._data.changeGoal(this.goals);
   }
 
+  openModal() {
+    this._modal.open("file-upload-modal");
+  }
+
   addItem() {
-    this.goals.push({name: this.goalText, completionStatus: this.defaultStatus});
+    this.goals.push({name: this.goalText, completionStatus: this.defaultStatus });
     this.goalText = '';
     this._data.changeGoal(this.goals);
   }

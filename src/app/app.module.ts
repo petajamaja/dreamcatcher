@@ -18,6 +18,8 @@ import { DreamCreatorMiniComponent} from './components/dream-creator/dream-creat
 import { QuotesMiniComponent } from './components/quotes/quotes-mini.component';
 import { MyDreamsMiniComponent } from './components/my-dreams/my-dreams-mini.component';
 import { RadarMiniComponent } from './components/radar/radar-mini.component';
+import { ModalComponent } from './components/shared/modal.component';
+import { ModalService } from './services/modal.service';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { RadarMiniComponent } from './components/radar/radar-mini.component';
     RadarMiniComponent,
     DreamCreatorComponent,
     DreamCreatorMiniComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,7 @@ import { RadarMiniComponent } from './components/radar/radar-mini.component';
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [DataService],
+  providers: [DataService, ModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
