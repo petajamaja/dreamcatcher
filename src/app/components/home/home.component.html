@@ -8,24 +8,4 @@
     <app-radar-mini></app-radar-mini>
     <app-my-dreams-mini></app-my-dreams-mini>
   </div>
-  <modal id="file-upload-modal">
-      <div class="modal">
-          <div class="modal-body">
-              <h1 align="center">Upload dream list from a file!</h1>
-              <p>You can upload a list of your dreams from a text file. The file has a special format and 
-                 is supposed to have been generated when you downloaded your last set of dreams from the 
-                 "My dreams" page of this website.
-              </p>
-              <form>
-                  <label for="dreams-upload" class="custom-file-upload">
-                    Choose file
-                  </label>
-                  <span id="file-selected"></span>
-                <input id="dreams-upload" type="file" (change)="fileChangeEvent($event)" />
-                <button type="button" (click)="upload()">Upload</button>
-              </form>
-          </div>
-      </div>
-      <div class="modal-background"></div>
-  </modal>
 </div>
