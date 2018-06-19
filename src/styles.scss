@@ -83,6 +83,10 @@ h3 {
   flex: 0 50%;
 }
 
+.scrollable-area {
+  overflow-y: auto;
+}
+
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
 }

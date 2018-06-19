@@ -1,7 +1,8 @@
-export default interface Dream { 
+export default interface Dream {
+    id: number, 
     name:string, 
-    id: number,
-    description?:string, 
-    tags?: any,
+    description:string, 
+    tags: any,
+    imageUrl: string,
     completionStatus: any
  }

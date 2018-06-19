@@ -2,7 +2,10 @@ import { Component, ElementRef, Input, OnInit, OnDestroy } from '@angular/core';
 import * as $ from 'jquery';
 
 import { ModalService } from '../../services/modal.service';
-
+/**
+ * Credit goes to Jason Watmore
+ * http://jasonwatmore.com/post/2017/01/24/angular-2-custom-modal-window-dialog-box
+ */
 @Component({
     selector: 'modal',
     template: '<ng-content></ng-content>',

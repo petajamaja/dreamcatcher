@@ -20,6 +20,7 @@ import { MyDreamsMiniComponent } from './components/my-dreams/my-dreams-mini.com
 import { RadarMiniComponent } from './components/radar/radar-mini.component';
 import { ModalComponent } from './components/shared/modal.component';
 import { ModalService } from './services/modal.service';
+import { BottomActionsComponent } from './components/my-dreams/bottom-actions.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ModalService } from './services/modal.service';
     RadarMiniComponent,
     DreamCreatorComponent,
     DreamCreatorMiniComponent,
-    ModalComponent
+    ModalComponent,
+    BottomActionsComponent
   ],
   imports: [
     BrowserModule,

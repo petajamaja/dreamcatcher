@@ -29,7 +29,9 @@ export class DreamCreatorMiniComponent implements OnInit {
   }
 
   addItem() {
-    this.goals.push({name: this.goalText, id: this.goals.length, completionStatus: this.defaultStatus });
+    this.goals.push({id: this.goals.length, name: this.goalText,
+                    description: '', tags: [], imageUrl: '',
+                    completionStatus: this.defaultStatus});
     this.goalText = '';
     this._data.changeGoal(this.goals);
   }

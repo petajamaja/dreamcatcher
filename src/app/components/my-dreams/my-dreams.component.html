@@ -1,20 +1,15 @@
-<div class="grid">
-    <div class="item">
-      <div class="item-content">
-        <!-- Safe zone, enter your custom markup -->
-        This can be anything.
-        <!-- Safe zone ends -->
-      </div>
-    </div>
-  
-    <div class="item">
-      <div class="item-content">
-        <!-- Safe zone, enter your custom markup -->
-        <div class="my-custom-content">
-          Yippee!
+<div class="bg">
+    <h1>YOUR DREAMS AND GOALS</h1>
+    <h3>Current dream count: ({{ itemCount }})</h3>
+    <div class="delimiter"></div>
+    <div class="grid scrollable-area">
+      <div class="item life-container" *ngFor="let goal of goals">
+        <div class="item-content">
+          <h2>{{goal.name}}</h2>
+          <div *ngIf="hasGoalDescription(goal)">{{goal.description}}</div>
+          <img *ngIf="hasGoalImage(goal)" href="imageUrl">
         </div>
-        <!-- Safe zone ends -->
       </div>
     </div>
-  
-  </div>
+    <app-bottom-actions></app-bottom-actions>
+</div>
