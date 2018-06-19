@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { DataService } from '../../services/data.service';
-import Goal from '../../api/goal.interface';
+import Dream from '../../api/dream.interface';
 import { ModalService } from '../../services/modal.service';
 
 @Component({
@@ -29,7 +29,7 @@ export class DreamCreatorMiniComponent implements OnInit {
   }
 
   addItem() {
-    this.goals.push({name: this.goalText, completionStatus: this.defaultStatus });
+    this.goals.push({name: this.goalText, id: this.goals.length, completionStatus: this.defaultStatus });
     this.goalText = '';
     this._data.changeGoal(this.goals);
   }

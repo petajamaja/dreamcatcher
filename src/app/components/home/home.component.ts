@@ -1,6 +1,6 @@
 import { Component, OnInit, Optional } from '@angular/core';
 import { DataService } from '../../services/data.service';
-import Goal from '../../api/goal.interface';
+import Dream from '../../api/dream.interface';
 import { DreamCreatorMiniComponent } from '../dream-creator/dream-creator-mini.component'
 import { RadarMiniComponent } from '../radar/radar-mini.component';
 import { QuotesMiniComponent } from '../quotes/quotes-mini.component';
@@ -16,7 +16,7 @@ import * as $ from 'jquery';
 export class HomeComponent implements OnInit {
 
   itemCount: number;
-  goals: Goal[] = [];
+  goals: Dream[] = [];
   filesToUpload: Array<File>;
 
   constructor(private _data: DataService, private _modal : ModalService) { }

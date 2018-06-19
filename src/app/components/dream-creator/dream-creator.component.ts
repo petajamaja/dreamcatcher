@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Goal from '../../api/goal.interface';
+import Goal from '../../api/dream.interface';
 import { DataService } from '../../services/data.service';
 
 @Component({
